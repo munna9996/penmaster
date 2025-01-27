@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/animasta/css/animasta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Noto+Serif+Todhri&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kay+Pho+Du:wght@400;500;600;700&family=Noto+Serif+Todhri&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header>
+    <nav class="header">
+        <div class="logo">
+            P<span class="second-letter">e</span><span class="third-letter">n</span><span class="Half-text">Master</span>
+        </div>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </label>
+    
+          <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+          <a class="home-link" href="index.html"></a> 
+          <a href="products.html"></a>
+          <a href="blog.html"></a>
+          <a href="login.html"></a>
+          
+        </div>
+      </nav>
+    </header>
+
+    
+
+
+    
+    <!-- carousel banner section -->
+
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel " >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img src="media/2.jpeg" class="d-block w-100 h-25vh" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="media/3.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="media/4.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="media/5.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="media/5.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="media/5.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="media/5.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+      
+    <div class="first-heading color-change-2x "  >
+      <h2 class="big">world-class </h2>
+      <h2 class="big1">Handwriting-services</h2>
+      <span class="normal-text heartbeat">Courses with 100% Guaranteed Results</span>
+      <button class="first-button vibrate-1  btn-60"  onclick="window.location.href='tel:7670969075'" >Book a Free classes</button>
+    </div>
+
+
+
+
+
+
+<section class=" pt-10 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16" >
+  <div class=" px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl  " >
+      <div class="grid items-center grid-cols-1 md:grid-cols-2">
+
+          <div data-aos="fade-right">
+              <h2 class=" text-3xl  font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl" >Hey 👋 I
+                  am
+                  <br class="block sm:hidden responsive-break" /> <span class="name slide-top" >Ali</span> 
+              </h2>
+              <p class="mt-4 text-gray-600 text-lg">                    Hi, I'm Ali, a handwriting expert with 20 years of experience! Whether you’re new to handwriting or want to improve your current style, I specialize in cursive, Lucida, and more. Through personalized lessons and guided practice, I’ll help you develop elegant, confident writing. Let’s transform your handwriting into a beautiful, unique reflection of you!
+
+              <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 md:mt-8">
+                  <span class="relative inline-block">
+                      <span class="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300 dark:bg-gray-900"></span>
+                  <span class="relative"> Have a question? </span>
+                  </span>
+                  <br class="block sm:hidden" />Ask me on <a href="https://wa.me/+917670969075" 
+                  class="transition-all duration-200 text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-500 hover:underline">
+                  WhatsApp
+               </a>
+              </p>
+          </div>
+
+          <div class="relative card " data-aos="fade-left"  >
+            <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="" alt="" />
+
+              <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110 bounce-in-top" src="media/Aboutme2.jpeg" alt="" />
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<div class="p-4 md:p-6 " id="box1" data-aos="fade-left" >
+  <div class="text-center mb-8">
+    <h1 class="text-3xl lg:text-4xl font-bold text-gray-800">Our Global Impact in Action</h1>
+    <p class="text-gray-500 mt-2 text-lg">Join the growing community of learners, improving their handwriting skills worldwide.</p>
+  </div>
+  <div class="border border-gray-200 bg-white rounded-3xl flex flex-wrap">
+    <!-- Students Trained -->
+    <div class="w-full ht md:w-1/2 lg:w-1/4 py-8">
+      <div class="md:border-r border-gray-200 px-12">
+        <p class="text-gray-600 mb-2 text-center">Students Trained</p>
+        <h2 class="text-4xl lg:text-5xl font-semibold text-center">2000+</h2>
+      </div>
+    </div>
+    <!-- Successful Handwriting Improvements -->
+    <div class="w-full ht md:w-1/2 lg:w-1/4 py-8">
+      <div class="lg:border-r border-gray-200 px-12">
+        <p class="text-gray-600 mb-2 text-center">Improvement Success</p>
+        <h2 class="text-4xl lg:text-5xl font-semibold text-center">90%+</h2>
+      </div>
+    </div>
+    <!-- Countries Available -->
+    <div class="w-full ht md:w-1/2 lg:w-1/4 py-8">
+      <div class="md:border-r border-gray-200 px-12">
+        <p class="text-gray-600 mb-2 text-center">Countries</p>
+        <h2 class="text-4xl lg:text-5xl font-semibold text-center">25+</h2>
+      </div>
+    </div>
+    <!-- Course Partners -->
+    <div class="w-full ht md:w-1/2 lg:w-1/4 py-8">
+      <div class="px-12">
+        <p class="text-gray-600 mb-2 text-center">Partners</p>
+        <h2 class="text-4xl lg:text-5xl font-semibold text-center">10+</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section id="testimonials" aria-label="What our customers are saying" class="bg-slate-50 py-20 sm:py-32" >
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-aos="zoom-in" >
+    <div class="mx-auto max-w-2xl md:text-center">
+      <h2 class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">Hear From Our Happy Learners</h2>
+    </div>
+    <ul role="list"
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+      <li>
+        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                <path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+              </svg>
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">My child's handwriting improved drastically after joining the classes. The methods used are so effective!</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Riya Sharma</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/women/5.jpg">
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                <path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+              </svg>
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">The teacher's attention to detail and personalized approach helped me a lot in improving my handwriting skills. Highly recommended!</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Arjun Singh</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/men/4.jpg">
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                <path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+              </svg>
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">These handwriting classes have improved my child's writing so much! It's neat and legible now, and he enjoys practicing.</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Meera Patel</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/women/9.jpg">
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section>
+  <div class="relative overflow-hidden bg-gray-900 pt-16 pb-32 space-y-24" data-aos="flip-down" >
+    <div class="relative">
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
+            <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
+
+                <div>
+                    <div>
+                        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                class="h-8 w-8 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="mt-6">
+                        <h2 class="text-2xl font-bold tracking-tight text-white">
+                          Improved Handwriting Skills After Training:
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-300">
+                          Improving handwriting skills after training with PenMaster can revolutionize the way you write. With expertly designed techniques and personalized guidance, PenMaster helps you achieve flawless penmanship. The training focuses on refining strokes, enhancing letter consistency, and ensuring smooth flow, making your writing clear and elegant. Whether you're looking to create an impression at work, add finesse to personal notes, or simply rediscover the joy of writing, PenMaster has you covered. Watch your handwriting evolve into a masterpiece that reflects precision, confidence, and creativity—one stroke at a time!.
+                        </p>
+                        <div class="mt-6">
+                            <a class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                                href="/login">
+                                Book Demo Class Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 sm:mt-16 lg:mt-0">
+                <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                    <img loading="lazy" width="647" height="486"
+                        class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                        style="color:transparent" src="media/image- (13).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="relative">
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 " data-aos="fade-right"   >
+            <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
+                <div>
+                    <div>
+                        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                class="h-8 w-8 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-2xl font-bold tracking-tight text-white">
+                          "Celebrating Excellence in Handwriting: Top-Ranked Students Shine Bright!":
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-300">
+                          Top-ranked students in the handwriting competition proudly display their achievements, showcasing exceptional talent and dedication with PenMaster. Their mastery of writing reflects precision, creativity, and hard work. Each award represents a commitment to excellence and a passion for the art of handwriting. These students inspire others to embrace the beauty of writing and strive for perfection with PenMaster..
+                        </p>
+                        <div class="mt-6">
+                            <a class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                                href="/login">
+                                Book Demo Class Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 sm:mt-16 lg:mt-0">
+                <div class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                    <img alt="Inbox user interface" loading="lazy" width="647" height="486"
+                        class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                        style="color:transparent" src="media/image- (12).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="relative" >
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 " data-aos="zoom-in" >
+            <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
+                <div>
+                    <div>
+                        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                class="h-8 w-8 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-2xl font-bold tracking-tight text-white">
+                          "Engaging Minds: PenMaster Ali Sir’s Inspiring Handwriting Class":
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-300">
+                          "Engaging Minds: PenMaster Ali Sir’s Inspiring Handwriting Class"  
+                          
+                            
+                          Students attentively listen to PenMaster Ali Sir’s expert guidance, learning the art of beautiful handwriting. His interactive sessions, filled with valuable techniques and motivation, inspire students to refine their skills, unlocking their potential to achieve writing excellence..
+                        </p>
+                        <div class="mt-6">
+                            <a class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                                href="/login">
+                                Book Demo Class Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 sm:mt-16 lg:mt-0">
+                <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                    <img loading="lazy" width="646" height="485"
+                        class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                        style="color:transparent"
+                        src="media/image- (1).jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000, // Increase the animation duration for a smoother effect
+          easing: 'ease-out-quint', // A more premium easing function
+          offset: 300, // Trigger animation a little earlier
+          mirror: true, // Allows animations to play in reverse when scrolling up
+        });
+
+        
+      </script>
+      
+
+    
+</body>
+</html>
